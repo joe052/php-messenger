@@ -4,25 +4,41 @@
 <head>
     <title>Send SMS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css">
 </head>
 
 <body>
-    <form method="post" action="send_sms.php">
-        <?php if (!empty($errors)): ?>
-            <div class="error">
-                <?php foreach ($errors as $error): ?>
-                    <p>
-                        <?php echo $error; ?>
-                    </p>
-                <?php endforeach; ?>
+    <div class="logincontainer">
+        <div class="login">
+            <div class="title">Text</div>
+            <div class="inputs">
+                <label class="textlabel">Phone:&nbsp;</label>
+                <input type="text" placeholder=":" class="input">
             </div>
-        <?php endif; ?>
-        <label for="phone_number">Phone Number</label>
-        <input type="text" id="phone_number" name="phone_number" placeholder="Enter phone number...">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Enter message..."></textarea>
-        <input type="submit" value="Send">
-    </form>
+            <div class="inputs">
+                <label class="textlabel">Texta:&nbsp;</label>
+                <input type="password" placeholder=":" class="input">
+            </div>
+            <!-- <div class="inputs">
+                <label class="textlabel">UserName:</label>
+                <br>
+                <input type="text" placeholder=":" class="input">
+                <br>
+                <label class="textlabel">Password:</label>
+                <br>
+                <input type="password" placeholder=":" class="input">
+            </div> -->
+            <div class="">
+                <a>
+                    <button class="btn">
+                        <i class="uil uil-facebook"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
