@@ -20,13 +20,13 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 150px;
+  /* width: 400px;
+  height: 250px; */
 }
 .login {
   box-shadow: rgb(95, 240, 208, 70%) 0px 0px 250px;
   text-align: center;
   padding: 20px;
-  width: 400px;
-  height: 250px;
   background: var(--mainlight);
   border-radius: 35px;
 }
@@ -34,18 +34,44 @@ body {
   margin-top: 25px;
   display: flex;
   flex-direction: row;
-  /* padding: 15px; */
 }
 
 .title {
   font-size: 24px;
 }
+label {
+  display: block;
+  margin: 5px;
+}
 
 .textlabel {
   text-shadow: rgb(95, 240, 208) 0px 0px 250px;
-  text-align: start;
+  /* text-align: start; */
   font-size: 20px;
 }
+
+textarea {
+  color: var(--cyan);
+  background-color: var(--main);
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.textarea:focus {
+  color: var(--cyan);
+  outline: none;
+  font-size: 15px;
+  border: solid 1px var(--cyan);
+}
+.textarea :focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
 .input {
   color: var(--cyan);
   background-color: var(--main);

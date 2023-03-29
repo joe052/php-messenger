@@ -12,12 +12,13 @@
         <div class="login">
             <div class="title">Text</div>
             <div class="inputs">
-                <label class="textlabel">Phone:&nbsp;</label>
-                <input type="text" placeholder=":" class="input">
+                <label for="phone_number" class="textlabel">Contact:&nbsp;</label>
+                <input type="text" id="phone_number" name="phone_number" placeholder="Enter phone number..."
+                    class="input">
             </div>
             <div class="inputs">
-                <label class="textlabel">Texta:&nbsp;</label>
-                <input type="password" placeholder=":" class="input">
+                <label for="message" class="textlabel">Message:&nbsp;</label>
+                <textarea id="message" name="message" placeholder="Enter message..."></textarea>
             </div>
             <!-- <div class="inputs">
                 <label class="textlabel">UserName:</label>
