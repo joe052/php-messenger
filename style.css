@@ -36,8 +36,14 @@ body {
   flex-direction: row;
 }
 
+.inputs i {
+  font-size: 16px;
+  color: white;
+}
+
 .title {
   font-size: 24px;
+  margin-bottom: 10px;
 }
 label {
   display: block;
@@ -53,7 +59,7 @@ label {
 textarea {
   color: var(--cyan);
   background-color: var(--main);
-  width: 100%;
+  width: 300px;
   padding: 10px;
   border: none;
   border-radius: 10px;
